@@ -14,54 +14,42 @@ public class Main {
         double third = new Scanner(System.in).nextDouble();
 
 
-       // boolean isCanBuy = false;
+       // boolean isCanBuy = true;
 
-       // double greatest = 0;
-       // double average = 0;
-       // double smallest = 0;
+        double greatest = 0;
+        double average = 0;
+        double smallest = 0;
         //todo дописать логику программы ниже.
-        if ((first > second) && (first > third)) {
-            System.out.println("Наибольший вес: " + first);
-        }
-        if ((first > second) && (first < third)) {
-            System.out.println("Средний вес: " + first);
-        }
-        if ((first < second) && (first < third)) {
-            System.out.println("Наименьший вес: " + first);
+        if (first > second && first > third) {
+            greatest = first;
+        } else if (second > first && second > third) {
+            greatest = second;
+        } else if (third > first && third > second) {
+            greatest = third;;
         }
 
-        if ((second > first) && (second > third)) {
-            System.out.println("Наибольший вес: " + second);
-        }
-        if ((second > first) && (second < third)) {
-            System.out.println("Средний вес: " + second);
-        }
-        if ((second < first) && (second < third)) {
-            System.out.println("Наименьший вес: " + second);
-        }
+        if (first < second && first < third) {
+            smallest = first;
+        } else if (second < first && second < third) {
+            smallest = second;
+        } else if (third < first && third < second) {
+            smallest = third;
 
-        if ((third > first) && (third > second)) {
-            System.out.println("Наибольший вес: " + third);
-        }
-        if ((third > first) && (third < second)) {
-            System.out.println("Средний вес: " + third);
-        }
-        if ((third < first) && (third < second)) {
-            System.out.println("Наименьший вес: " + third);
         }
 
-
-
-
-
-
-
+         if ((first > second && first < third) || (first < second && first > third)) {
+            average = first;
+        } else if ((second > first && second < third) || (second < first && second > third)) {
+            average = second;
+        } else if ((third > first && third < second) || (third < first && third > second)) {
+            average = third;
+        }
 
         //todo
 
 
-       // System.out.println("Наибольший вес: " + 10);
-       // System.out.println("Средний вес: " + 9);
-      //  System.out.println("Наименьший вес: " + 1);
+        System.out.println("Наибольший вес: " + greatest);
+        System.out.println("Средний вес: " + average);
+        System.out.println("Наименьший вес: " + smallest);
     }
 }
