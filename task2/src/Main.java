@@ -25,7 +25,7 @@ public class Main {
         } else if (second > first && second > third) {
             greatest = second;
         } else if (third > first && third > second) {
-            greatest = third;;
+            greatest = third;
         }
 
         if (first < second && first < third) {
