@@ -14,11 +14,11 @@ public class Main {
         double third = new Scanner(System.in).nextDouble();
 
 
-        boolean isCanBuy = false;
+       // boolean isCanBuy = false;
 
-        double greatest = 0;
-        double average = 0;
-        double smallest = 0;
+       // double greatest = 0;
+       // double average = 0;
+       // double smallest = 0;
         //todo дописать логику программы ниже.
         if ((first > second) && (first > third)) {
             System.out.println("Наибольший вес: " + first);
