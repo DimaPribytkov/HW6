@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("\t\t\t***Программа определения весов товаров***\n\n\n");
-
+        //УСЛОВИМСЯ, что равные и отрицательные веса вводить нельзя!!!
         System.out.println("Введите первый вес: ");
         double first = new Scanner(System.in).nextDouble();
 
